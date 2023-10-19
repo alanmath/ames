@@ -1,14 +1,5 @@
-name: ames
-dependencies:
-  - python
-  - pip
-  - numpy
-  - scipy
-  - matplotlib
-  - pandas
-  - jupyterlab
-  - folium
-  - yapf
-  - seaborn
-  - scikit-learn
-  - requests
+
+python
+pip
+numpy
+scipy matplotlib pandas jupyterlab folium yapf seaborn scikit-learn requests
