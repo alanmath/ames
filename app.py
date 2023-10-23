@@ -22,10 +22,10 @@ def predict():
         data = request.get_json()
         
         # Converter dados JSON em DataFrame e salvar como CSV
-        # pd.DataFrame([data]).to_csv('data/raw/oxe.csv', index=False)
+        pd.DataFrame([data]).to_csv('data/raw/oxe.csv', index=False)
         
-        # Executar o script de processamento (certifique-se de que o caminho do script esteja correto)
-        # subprocess.run(['python', 'notebooks/combined_script.py'])
+        
+        subprocess.run(['python', 'notebooks/combined_script.py'])
         
         # Carregar dados processados
         processed_data = pd.read_csv('data/processed/ames_model_data.csv')
